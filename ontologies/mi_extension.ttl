@@ -1,0 +1,202 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix mi: <http://data.ld4l.org/harvard/movingimage/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ld4l: <http://bib.ld4l.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdacc: <http://rdaregistry.info/termList/RDAColourContent/ > .
+
+# Classes
+
+mi:ConditionDefect a owl:Class ;
+    rdfs:label "condition defect" ;
+    rdfs:comment "Physical defects in moving image materials" .
+
+mi:ConditionGrade a owl:Class ;
+    rdfs:label "condition grade" ;
+    rdfs:comment "General condition of moving image materials" .	
+	
+mi:Caution a owl:Class ;
+    rdfs:label "caution" ;
+    rdfs:comment "Cautions for moving image material use" .	
+	
+mi:ColorCharacteristic a owl:Class ;
+	rdfs:label "color" ;
+	rdfs:comment "Characterization of color content in moving image materials" .
+	
+mi:ImdbNumber a bf:Identifier ;
+    rdfs:label "IMDb identifier" ;
+    rdfs:comment "A unique idenfitifier for a moving image work as defined by the Internet Movie Database" .
+	
+# Activity Classes
+# comment out if added to <http://bib.ld4l.org/ontology/> 
+
+mi:ProductionCompanyActivity a bib:Activityy ;
+	rdfs:label "Purchase" ;
+	rdfs:comment "The activity of purchasing a resource" .
+
+mi:PurchaseActivity a bib:AcquisitionActivity ;
+	rdfs:label "Purchase" ;
+	rdfs:comment "The activity of purchasing a resource" .
+
+mi:UseActivity a bib:Activity ;
+	rdfs:label "Use" ;
+	rdfs:comment "The activity of using a resource" .
+	
+mi:ScreenerActivity a mi:UseActivity ;
+	rdfs:label "Screen" ;
+	rdfs:comment "The activity of screening a moving image resource" .
+	
+# Condition defect individuals
+
+mi:EdgeDamage a mi:ConditionDefect ;
+    rdfs:label "edge damage" .
+
+mi:Dirty a mi:ConditionDefect ;
+    rdfs:label "dirty" . 
+
+mi:Brittle a mi:ConditionDefect ;
+    rdfs:label "brittle" . 
+
+mi:WaxyFlaky a mi:ConditionDefect ;
+    rdfs:label "waxy/flaky" . 
+
+mi:Scratches a mi:ConditionDefect ;
+    rdfs:label "scratches" . 
+
+mi:SprocketDamage a mi:ConditionDefect ;
+    rdfs:label "sprocket damage" . 
+	
+mi:ExtensiveRepairs a mi:ConditionDefect ;
+    rdfs:label "extensive repairs/many splices" . 
+
+mi:Shrunken a mi:ConditionDefect ;
+    rdfs:label "shrunken of 0.5%" . 
+	
+mi:Curl a mi:ConditionDefect ;
+    rdfs:label "curl" . 
+
+mi:Blotchy a mi:ConditionDefect ;
+    rdfs:label "blotchy (oil or vinegar)" . 
+	
+mi:PerforationDamage a mi:ConditionDefect ;
+    rdfs:label "perforation damage" . 
+	
+mi:ColorFade a mi:ConditionDefect ;
+    rdfs:label "color fade/b&w contrast" . 
+	
+mi:Spliced a mi:ConditionDefect ;
+    rdfs:label "spliced" . 
+	
+mi:PoorSound a mi:ConditionDefect ;
+    rdfs:label "poor sound" . 
+	
+mi:BurnMarks a mi:ConditionDefect ;
+    rdfs:label "burn marks" . 
+
+mi:Discolored a mi:ConditionDefect ;
+    rdfs:label "discolored" . 
+
+mi:StickyTape a mi:ConditionDefect ;
+    rdfs:label "sticky tape splices" . 
+	
+mi:Mold a mi:ConditionDefect ;
+    rdfs:label "mold" . 
+
+# Condition grade individuals
+
+mi:ExcellentCondition a mi:ConditionGrade ; 
+    rdfs:label "excellent" ;
+	rdfs:comment "excellent condition as defined by local standards of Harvard Film Archive" .
+
+mi:GoodCondition a mi:ConditionGrade ; 
+    rdfs:label "good" .
+
+mi:AcceptableCondition a mi:ConditionGrade ; 
+    rdfs:label "acceptable" .
+	
+mi:PoorCondition a mi:ConditionGrade ; 
+    rdfs:label "poor" .
+	
+# Caution individuals
+
+mi:Censored a mi:Caution ;
+    rdfs:label "censored" . 
+
+mi:Incomplete a mi:Caution ;
+    rdfs:label "incomplete" . 
+	
+mi:NoEnglish a mi:Caution ;
+    rdfs:label "no English" . 
+
+mi:PrePrint a mi:Caution ;
+    rdfs:label "pre-print material" . 
+	
+mi:SubstandardQuality a mi:Caution ;
+    rdfs:label "substandard quality" . 
+
+mi:Unique a mi:Caution ;
+    rdfs:label "unique" . 
+
+mi:Vinegar a mi:Caution ;
+    rdfs:label "vinegar" . 
+
+mi:SixteenMM a mi:Caution ;
+    rdfs:label "16mm scope" . 
+	
+mi:Cropped a mi:Caution ;
+    rdfs:label "cropped format" . 
+
+mi:DualSystem a mi:Caution ;
+    rdfs:label "dual system" . 
+	
+mi:Pink a mi:Caution ;
+    rdfs:label "pink" . 
+	
+	
+# Color individuals
+
+mi:BW a mi:ColorCharacteristic ;
+	rdfs:label "black & white" ;
+	skos:broader rdacc:1002 .
+	
+mi:BWtinted a mi:ColorCharacteristic ;
+	rdfs:label "tinted black & white" ;
+	skos:broader rdacc:1002 .
+	
+mi:BWtoned a mi:ColorCharacteristic ;
+	rdfs:label "toned black & white" ;
+	skos:broader rdacc:1002 .
+	
+mi:Color a mi:ColorCharacteristic ;
+	rdfs:label "color" ; 
+	skos:broader rdacc:1003 .
+
+mi:BWcolor a mi:ColorCharacteristic ;
+	rdfs:label "black & white and color" ;
+	skos:broader mi:Color .
+	
+mi:IBtechnicolor a mi:ColorCharacteristic ;
+	rdfs:label "color produced by IB Technicolor process" ;
+	skos:broader mi:Color  .
+
+mi:Kodacolor a mi:ColorCharacteristic ;
+	rdfs:label "color produced by Kodacolor process" ;
+	skos:broader mi:Color  .
+
+mi:Reversal a mi:ColorCharacteristic ;
+	rdfs:label "color produced by reversal film" ;
+	skos:broader mi:Color  .
+
+# Properties
+
+mi:intertitleLanguage rdfs:subPropertyOf dcterms:language ;
+    rdfs:label "intertitle language" .
+
+mi:spokenLanguage rdfs:subPropertyOf dcterms:language ;
+    rdfs:label "spoken language" .
+
+mi:subtitleLanguage rdfs:subPropertyOf dcterms:language ;
+    rdfs:label "subtitle language" .
