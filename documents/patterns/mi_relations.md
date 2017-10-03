@@ -1,7 +1,7 @@
 # Moving image relations
 
 ## Recommendation overview
-The LD4L/LD4P core ontology paper [Relations] (https://docs.google.com/document/d/1SU4VqY-T8sh3WHIfkKZaj2SpOzjlgOZE56F1NpGMmaM/edit#heading=h.9tzj15vuofrj) recommends the use of unconstrained RDA properties to describe derivative and equivalence relationships between work and/or instance entities in BIBFRAME, and BF 2.0 properties to describe other content relationships. Following that recommendation, this paper specifies some properties of particular relevance in relating moving image works and proposes relationships with commonly-used external identifiers as an additional way to create relationships between works through querying or inference.
+The LD4L/LD4P core ontology paper [Relations](https://docs.google.com/document/d/1SU4VqY-T8sh3WHIfkKZaj2SpOzjlgOZE56F1NpGMmaM/edit#heading=h.9tzj15vuofrj) recommends the use of unconstrained RDA properties to describe derivative and equivalence relationships between work and/or instance entities in BIBFRAME, and BF 2.0 properties to describe other content relationships. Following that recommendation, this paper specifies some properties of particular relevance in relating moving image works and proposes relationships with commonly-used external identifiers as an additional way to create relationships between works through querying or inference.
 
 ## Related documents
 Relations
@@ -9,7 +9,7 @@ Identifiers
 
 ## Approach to moving forward
 
-![diagram of relationships]()
+![diagram of relationships](https://github.com/LD4P/moving-image/blob/develop/documents/patterns/mi_relations.svg)
 
 * Following a LD4L/P core ontology recommendation, use unconstrained RDA properties to relate works and their derivatives, including:
   * rdau:60710 “has derivative resource relationship with” where directionality is unclear
