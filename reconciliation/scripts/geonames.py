@@ -31,11 +31,12 @@ def select_state(query_results):
 
     if len(query_results['geonames']) != 0:
         selection = query_results['geonames'][0]
+        #print(selection['name'])
         for result in query_results['geonames']:    
             #print(result['name'])
-            if result['fcodeName'] == 'first-order administrative division':
+            if result['fcodeName'] == 'first-order administrative division': 
                 selection = result 
                 #print(selection['name'])
-            return [selection['geonameId'], selection['name']]
+        return [selection['geonameId'], selection['name']]
     else:
         return ['', '']
