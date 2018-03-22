@@ -1,9 +1,21 @@
 Value,Field,Named Individual
 Silent,Sound aspects,rdasco:1002
 Dolby A,Sound aspects,rdaspc:1005
-Dolby SR,Sound aspects,mi:DolbySR
+Dolby SR,Sound aspects,mi:DolbySRsound
 DTS,Sound aspects,mi:DTS
 Sound,Sound aspects,rdasco:1001
-Variable area,Soundtrack type,mi:VariableArea
-Variable density,Soundtrack type,mi:VariableDensity
-Magnetic,Soundtrack type,mi:Magnetic
+5.1,Sound aspects,mi:5point1sound
+5.1 audio,Sound aspects,mi:5point1sound
+Dolby,Sound aspects,rdaspc:1004
+Magnetic,Sound aspects,mi:MagneticSoundMedium
+Optical,Sound aspects,mi:OpticalSoundMedium
+Dolby Digital,Sound aspects,mi:DolbyDigitalSound
+SDDS,Sound aspects,mi:SDDSsound
+SRD,Sound aspects,mi:DolbyDigitalSound
+Dolby D,Sound aspects,mi:DolbyDigitalSound
+Stereo,Sound aspects,mi:StereoSound
+Mono,Sound aspects,mi:MonoSound
+QUAD,Sound aspects,mi:QuadSound
+Variable area,Soundtrack type,mi:VariableAreaSoundMedium
+Variable density,Soundtrack type,mi:VariableDensitySoundMedium
+Magnetic,Soundtrack type,mi:MagneticSoundMedium
