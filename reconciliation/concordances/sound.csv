@@ -19,3 +19,6 @@ QUAD,Sound aspects,mi:QuadSound
 Variable area,Soundtrack type,mi:VariableAreaSoundMedium
 Variable density,Soundtrack type,mi:VariableDensitySoundMedium
 Magnetic,Soundtrack type,mi:MagneticSoundMedium
+Cyan,Soundtrack type,mi:CyanSoundMedium
+Magnenta,Soundtrack type,mi:MagentaSoundMedium
+Sound on Disc,Soundtrack type,mi:DiscSoundMedium
